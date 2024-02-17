@@ -40,20 +40,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        lunchCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PopUpClass popUpClass = new PopUpClass();
-                popUpClass.showPopupWindow(v);
-            }
+        lunchCard.setOnClickListener(v -> {
+            PopUpClass popUpClass = new PopUpClass();
+            popUpClass.showPopupWindow(v);
         });
 
-        dinnerCard.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PopUpClass popUpClass = new PopUpClass();
-                popUpClass.showPopupWindow(v);
-            }
+        dinnerCard.setOnClickListener(v -> {
+            PopUpClass popUpClass = new PopUpClass();
+            popUpClass.showPopupWindow(v);
         });
 
 
