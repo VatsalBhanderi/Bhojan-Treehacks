@@ -133,6 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:text="LOG"
+        android:id="@+id/captureButton"
         android:layout_marginLeft="50dp"/>
 
     <Button
