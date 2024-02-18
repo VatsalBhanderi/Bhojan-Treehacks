@@ -1,5 +1,11 @@
 package com.example.treehacks_bhojan;
 
+import static androidx.core.app.ActivityCompat.startActivityForResult;
+import static androidx.core.content.ContextCompat.startActivity;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.provider.MediaStore;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -43,9 +49,9 @@ public class PopUpClass {
         buttonEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //As an example, display the message
-                Toast.makeText(view.getContext(), "Wow, popup action button", Toast.LENGTH_SHORT).show();
+                Intent camera_intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                // Start the activity with camera_intent, and request pic id
+                startActivity(v.getContext(), camera_intent, null );
 
             }
         });
