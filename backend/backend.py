@@ -117,7 +117,7 @@ def acceptMeal():
                 return jsonify({'message': 'Thats fine! You deserve a treat "sometimes".'}), 201
 
             elif last_meal.isFoodGood == 'Yes':
-                return jsonify({'message': 'Congrats! You are not dying for a few more minutes.'}), 201
+                return jsonify({'message': 'Congrats for choosing a healthy option'}), 201
 
 @app.route('/getExercises', methods=['POST'])
 def getExercises():
